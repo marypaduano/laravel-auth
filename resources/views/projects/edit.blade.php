@@ -4,8 +4,10 @@
 
 
   <div class="container">
-    <h1>Modifica: {{ $project->title }}</h1>
+    <h1>Modifica Progetto:</h1>
+    <h2>"{{ $project->title }}"</h2>
   </div>
+  
 
   <div class="container">
     <form action="{{ route('projects.update',$project) }}" method="POST">
