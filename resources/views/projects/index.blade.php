@@ -16,6 +16,7 @@
           <th scope="col">TITLE PROJECT</th>
           <th scope="col">CLIENT</th>
           <th scope="col">DESCRIPTION</th>
+          <th scope="col">URL</th>
           <th scope="col">MODIFICA</th>
           <th scope="col">ELIMINA</th>
         </tr>
@@ -33,6 +34,10 @@
             </td>
             <td>
                 <p>{{ $project->description }}</p>
+            </td>
+            <td>
+                <a href="">{{ $project->url }}</a>
+                <p></p>
             </td>
             <td>
               <a class="btn btn-primary btn-sm" href="{{ route('projects.edit',$project) }}">EDIT</a>
